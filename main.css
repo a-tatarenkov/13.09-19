@@ -1,12 +1,99 @@
+/************************************************/
+/*                    BASIC                     */
+/************************************************/
 body {
-    background-color: #bdfabd;
+    background-color: #6ddfff;
     font-family: Arial;
 }
+
+/************************************************/
+/*                   REUSABLE                   */
+/************************************************/
+.wrapper {
+
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 16px 24px;
+    border: 5px solid #fff;
+    border-radius: 200px;
+    /* width: 100%; */
+}
+
+h4 {
+    margin: 0;
+    width: 100%;
+    text-align: right;
+}
+hr {
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
-    color: red;
+ol {
+    /* max-width: 400px; */
+    margin-left: 40px;
+    /* padding: 0 50px; */
+}
+
+ul {
+    margin-left: 40px;
+}
+
+li > a {
+    font-size: 20px;
+    color: #000;
+}
+
+li {
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+    border-radius: 200px;
+    padding: 12px 16px;
+    font-size: 20px;
+    transition: all  0.2s ease-in-out;
+
+    &:hover {
+        scale: 1.02;
+        box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.29);
+        -webkit-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.29);
+        -moz-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.29);
+    }
+}
+
+/************************************************/
+/*                  INDIVIDUAL                  */
+/************************************************/
+/* ===== teacher ===== */
+#teacher-li {
+    background-color: rgb(21, 204, 21);
+    list-style-type: none;
+}
+#teacher-li > a {
+    color: #fff;
+}
+
+/* ===== shpak ===== */
+#shpak {
+    font: 120%/120% "Calibri";
+
+
+    &::before {
+        margin-right: 20px;
+        content: "🤘";
+    }
+    &::after {
+        margin-left: 20px;
+        content: "🌵";
+    }
 }

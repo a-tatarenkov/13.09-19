@@ -99,7 +99,7 @@ li {
 }
 /*--------Denys--------*/
 #link-denys::before{
-    content:'🦾'
+    content:'🦾';
     margin-right: 20px;
 }
 #link-denys{

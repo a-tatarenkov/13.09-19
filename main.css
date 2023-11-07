@@ -97,3 +97,11 @@ li {
         content: "🌵";
     }
 }
+/*--------Denys--------*/
+#link-denys::before{
+    content:'🦾';
+    margin-right: 20px;
+}
+#link-denys{
+    text-shadow: #7F00FF 1px 0 10px;
+}
